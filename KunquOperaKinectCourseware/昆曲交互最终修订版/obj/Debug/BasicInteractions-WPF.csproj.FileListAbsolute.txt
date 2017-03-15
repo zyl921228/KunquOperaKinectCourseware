@@ -1,0 +1,137 @@
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\BasicInteractions-WPF.exe.config
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\Astoria.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\beachsunset.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\clouds.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\Daffodils.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\DarlingHarbour.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\DC.JPG
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\driedfoods.JPG
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\DT Kirkland.JPG
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\EiffelTower.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\flower.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\greathall.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\gumwall.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\Iris.JPG
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\italy.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\LakeTye.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\Lights.JPG
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\longbeach.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\OperaHouse.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\posyisland.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\QueensHamlet.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\river.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\roses.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\SeattleFireworks.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\SnohomishValley.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\Sydney.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Images\windfarm.jpg
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\Content\Stories.xml
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\BasicInteractions-WPF.exe
+F:\2013寒假\Kinect\BasicInteractions-WPF\bin\Debug\BasicInteractions-WPF.pdb
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\ResolveAssemblyReference.cache
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Resources\Colors.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\MainWindow.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\AttractControl.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\Introduction.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\StorySelectionControl.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\CategorySelectionControl.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\HandVisualizer.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\StoryControl.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\VoiceInstructionControl.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\App.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\BasicInteractions-WPF_Content.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\BasicInteractions-WPF_MarkupCompile.cache
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\BasicInteractions-WPF_MarkupCompile.lref
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\App.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Controls\ControlStyles.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\MainWindow.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\AttractControl.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\Introduction.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\StorySelectionControl.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\CategorySelectionControl.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\HandVisualizer.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\StoryControl.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\VoiceInstructionControl.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\BasicInteractions-WPF.g.resources
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Microsoft.Samples.Kinect.BasicInteractions.Properties.Resources.resources
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\GenerateResource.read.1.tlog
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\GenerateResource.write.1.tlog
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\BasicInteractions-WPF.exe
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\BasicInteractions-WPF.pdb
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\UserControl1.baml
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\UserControl1.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\ClothingControl.g.cs
+F:\2013寒假\Kinect\BasicInteractions-WPF\obj\Debug\Views\ClothingControl.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\bin\Debug\BasicInteractions-WPF.exe.config
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\BasicInteractions-WPF.exe
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\BasicInteractions-WPF.pdb
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Resources\Colors.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\MainWindow.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\Introduction.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\StorySelectionControl.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\CategorySelectionControl.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\HandVisualizer.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\App.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\BasicInteractions-WPF_MarkupCompile.cache
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\BasicInteractions-WPF_MarkupCompile.lref
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\AttractControl.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\AttractControl.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\App.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Controls\ControlStyles.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\Introduction.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\StorySelectionControl.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\CategorySelectionControl.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\HandVisualizer.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\bin\Debug\BasicInteractions-WPF.exe
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\bin\Debug\BasicInteractions-WPF.pdb
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\MainWindow.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\BasicInteractions-WPF.g.resources
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Microsoft.Samples.Kinect.BasicInteractions.Properties.Resources.resources
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\CategorySelectionControl2.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\CategorySelectionControl2.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\BasicInteractions-WPF.csprojResolveAssemblyReference.cache
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\BasicInteractions-WPF.csproj.GenerateResource.Cache
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\CategorySelectionControl3.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\CategorySelectionControl3.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\CategorySelectionControl4.g.cs
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\Views\CategorySelectionControl4.baml
+F:\2013寒假\昆曲\BasicInteractions-WPF - 副本 (2)\obj\Debug\BasicInteractions-WPF_Content.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\bin\Debug\BasicInteractions-WPF.exe.config
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF.exe
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF.pdb
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\bin\Debug\BasicInteractions-WPF.exe
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\bin\Debug\BasicInteractions-WPF.pdb
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF.csprojResolveAssemblyReference.cache
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Resources\Colors.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\AttractControl.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\CategorySelectionControl2.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\MainWindow.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\AttractControl.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\CategorySelectionControl3.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\CategorySelectionControl4.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\Introduction.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\StorySelectionControl.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\CategorySelectionControl.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\HandVisualizer.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\App.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF_MarkupCompile.cache
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF_MarkupCompile.lref
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\App.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\CategorySelectionControl2.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Controls\ControlStyles.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\MainWindow.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\CategorySelectionControl3.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\CategorySelectionControl4.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\Introduction.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\StorySelectionControl.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\CategorySelectionControl.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Views\HandVisualizer.baml
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF.g.resources
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\Microsoft.Samples.Kinect.BasicInteractions.Properties.Resources.resources
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF.csproj.GenerateResource.Cache
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲六百年体感交互式课件\昆曲交互最终修订版\bin\Debug\BasicInteractions-WPF.exe.config
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲六百年体感交互式课件\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF.exe
+D:\教育技术学\Kinect 试衣间+昆曲\Kinect昆曲交互\昆曲六百年体感交互式课件\昆曲交互最终修订版\obj\Debug\BasicInteractions-WPF.pdb

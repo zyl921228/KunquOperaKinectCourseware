@@ -1,0 +1,483 @@
+﻿<UserControl x:Class="Microsoft.Samples.Kinect.BasicInteractions.Introduction" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Microsoft.Samples.Kinect.BasicInteractions" mc:Ignorable="d">
+    <UserControl.Resources>
+        <Storyboard x:Key="onGoing">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="图层_85" RepeatBehavior="Forever">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-12.189"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)" Storyboard.TargetName="图层_85" RepeatBehavior="Forever">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="难寻吴宫旧舞茵_问开元遗事_白头人尽_云亭词客_搁笔几度酸辛_声传皓齿曲未终_泪滴红盘蜡已寸_袍笏样_墨粉痕_一番妆点一番新_">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="难寻吴宫旧舞茵_问开元遗事_白头人尽_云亭词客_搁笔几度酸辛_声传皓齿曲未终_泪滴红盘蜡已寸_袍笏样_墨粉痕_一番妆点一番新_" RepeatBehavior="Forever">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:30" Value="763"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="leaves" RepeatBehavior="Forever">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.365"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="昆">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="曲">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.82" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="六百年">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="印章">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="印章">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="印章">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.9" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="印章2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="昆曲">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="印章2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="昆曲">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="印章2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="昆曲">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Chinese_Qukun__________" RepeatBehavior="Forever">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.46"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.46"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="___苏州昆曲博物馆" RepeatBehavior="Forever">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.46"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.46"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="___kunshan" RepeatBehavior="Forever">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.46"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.46"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="昆_山" RepeatBehavior="Forever">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.46"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.46"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="小人1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="小人1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="小人1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ZheZhao1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="历史行程">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="历史行程">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ZheZhao2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="历史行程">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="历史行程">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <!--<DataTrigger Binding="{Binding IsHoveredOver, ElementName=ShiButton}" Value="true">
+            <DataTrigger.EnterActions>
+                <BeginStoryboard Storyboard="{StaticResource ZheZhao1}"/>
+            </DataTrigger.EnterActions>
+            <DataTrigger.ExitActions>
+                <BeginStoryboard Storyboard="{StaticResource ZheZhao2}"/>
+            </DataTrigger.ExitActions>
+        </DataTrigger>-->
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <!--<BeginStoryboard Storyboard="{StaticResource onGoing}"/>-->
+            <!--<BeginStoryboard x:Name="ZheZhao1_BeginStoryboard" Storyboard="{StaticResource ZheZhao1}"/>
+            <BeginStoryboard Storyboard="{StaticResource ZheZhao2}"/>-->
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    <Grid x:Name="LayoutRoot">
+        <Canvas x:Name="_2首页" ClipToBounds="True" HorizontalAlignment="Left" Height="655" UseLayoutRounding="False" VerticalAlignment="Top" Width="1024">
+            <Image x:Name="背景_副本" Height="853" Canvas.Left="-124" Source="/BasicInteractions-WPF;component/2首页_Images\背景 副本.png" Canvas.Top="-198" Width="1148"/>
+            <Image x:Name="leaves" Height="655" Canvas.Left="0" Source="/BasicInteractions-WPF;component/2首页_Images\leaves.png" Canvas.Top="0" Width="1024"/>
+            <Image x:Name="图层_19_副本" Height="147" Canvas.Left="-83" Opacity="0.749" Source="/BasicInteractions-WPF;component/2首页_Images\图层 19 副本.png" Canvas.Top="573" Width="1036"/>
+            <Image x:Name="六百年" Height="159" Canvas.Left="185" Source="/BasicInteractions-WPF;component/2首页_Images\六百年.png" Canvas.Top="235" Width="46"/>
+            <Image x:Name="图层_66" Height="85" Canvas.Left="-9" Opacity="0.902" Source="/BasicInteractions-WPF;component/2首页_Images\图层 66.png" Canvas.Top="3" Width="722"/>
+            <Image x:Name="图层_67" Height="101" Canvas.Left="-47" Opacity="0.902" Source="/BasicInteractions-WPF;component/2首页_Images\图层 67.png" Canvas.Top="18" Width="773"/>
+            <Image x:Name="图层_11_副本" Height="95" Canvas.Left="-2" Source="/BasicInteractions-WPF;component/2首页_Images\图层 11 副本.png" Canvas.Top="-2" Width="1045">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/BasicInteractions-WPF;component/2首页_Images\图层 11 副本 (Layer Mask).png"/>
+                </Image.OpacityMask>
+            </Image>
+            <Image x:Name="难寻吴宫旧舞茵_问开元遗事_白头人尽_云亭词客_搁笔几度酸辛_声传皓齿曲未终_泪滴红盘蜡已寸_袍笏样_墨粉痕_一番妆点一番新_" Height="133" Canvas.Left="218" Source="/BasicInteractions-WPF;component/2首页_Images\难寻吴宫旧舞茵，问开元遗事，白头人尽。云亭词客，搁笔几度酸辛。声传皓齿曲未终，泪滴红盘蜡已寸。袍笏样，墨粉痕，一番妆点一番新。.png" Canvas.Top="511" Width="255" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="图层_91_副本" Height="620" Canvas.Left="-1" Source="/BasicInteractions-WPF;component/2首页_Images\图层 91 副本.png" Canvas.Top="0" Width="90"/>
+            <Image x:Name="图层_91" Height="584" Canvas.Left="0" Source="/BasicInteractions-WPF;component/2首页_Images\图层 91.png" Canvas.Top="-7" Width="61"/>
+            <Image x:Name="图层_78" Height="662" Canvas.Left="957" Source="/BasicInteractions-WPF;component/2首页_Images\图层 78.png" Canvas.Top="-7" Width="94"/>
+            <Image x:Name="图层_77" Height="566" Canvas.Left="850" Source="/BasicInteractions-WPF;component/2首页_Images\图层 77.png" Canvas.Top="333" Width="288"/>
+            <Image x:Name="图层_85_副本" Height="179" Canvas.Left="193" Opacity="0.329" Source="/BasicInteractions-WPF;component/2首页_Images\图层 85 副本.png" Canvas.Top="15" Width="190"/>
+            <Image x:Name="图层_85" Height="156" Canvas.Left="187" Source="/BasicInteractions-WPF;component/2首页_Images\图层 85.png" Canvas.Top="-2" Width="164" RenderTransformOrigin="0.494,-0.013">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="28" Color="#FFFFF8AE" ShadowDepth="10"/>
+                </Image.Effect>
+            </Image>
+            <Image x:Name="图层_25" Height="771" Canvas.Left="-3" Source="/BasicInteractions-WPF;component/2首页_Images\图层 25.png" Canvas.Top="-85" Width="1028"/>
+            <Image x:Name="图层_87" Height="756" Canvas.Left="0" Source="/BasicInteractions-WPF;component/2首页_Images\图层 87.png" Canvas.Top="402" Width="1042">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/BasicInteractions-WPF;component/2首页_Images\图层 87 (Layer Mask).png"/>
+                </Image.OpacityMask>
+            </Image>
+            <Image x:Name="昆" Height="133" Canvas.Left="168" Source="/BasicInteractions-WPF;component/2首页_Images\昆.png" Canvas.Top="94" Width="113">
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="5" Color="#FF000000" Direction="-11" Opacity="0.75" ShadowDepth="5"/>
+                </Image.Effect>
+            </Image>
+            <Image x:Name="曲" Height="64" Canvas.Left="233" Source="/BasicInteractions-WPF;component/2首页_Images\曲.png" Canvas.Top="208" Width="63">
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="5" Color="#FF000000" Direction="-11" Opacity="0.75" ShadowDepth="5"/>
+                </Image.Effect>
+            </Image>
+            <Image x:Name="印章" Height="18" Canvas.Left="275" Source="/BasicInteractions-WPF;component/2首页_Images\印章.png" Canvas.Top="209" Width="18" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="印章2" Height="91" Canvas.Left="218" Source="/BasicInteractions-WPF;component/2首页_Images\印章2.png" Canvas.Top="312" Width="70" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="昆曲" Height="53" Canvas.Left="245" Source="/BasicInteractions-WPF;component/2首页_Images\昆曲.png" Canvas.Top="332" Width="16" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Chinese_Qukun__________" Height="162" Canvas.Left="147" Source="/BasicInteractions-WPF;component/2首页_Images\Chinese Qukun          .png" Canvas.Top="153" Width="21"/>
+            <Image x:Name="C底线" Height="221" Canvas.Left="145" Source="/BasicInteractions-WPF;component/2首页_Images\C底线.png" Canvas.Top="94" Width="1"/>
+            <Image x:Name="C底线_副本" Height="162" Canvas.Left="167" Source="/BasicInteractions-WPF;component/2首页_Images\C底线 副本.png" Canvas.Top="105" Width="1"/>
+            <Image x:Name="C底线_副本_2" Height="59" Canvas.Left="116" Source="/BasicInteractions-WPF;component/2首页_Images\C底线 副本 2.png" Canvas.Top="104" Width="1"/>
+            <Image x:Name="C底线_副本_3" Height="111" Canvas.Left="102" Source="/BasicInteractions-WPF;component/2首页_Images\C底线 副本 3.png" Canvas.Top="93" Width="1"/>
+            <Image x:Name="C底线_副本_4" Height="152" Canvas.Left="82" Source="/BasicInteractions-WPF;component/2首页_Images\C底线 副本 4.png" Canvas.Top="85" Width="1"/>
+            <Image x:Name="___苏州昆曲博物馆" Height="90" Canvas.Left="84" Source="/BasicInteractions-WPF;component/2首页_Images\苏州昆曲博物馆.png" Canvas.Top="147" Width="12"/>
+            <Image x:Name="___kunshan" Height="71" Canvas.Left="106" Source="/BasicInteractions-WPF;component/2首页_Images\kunshan.png" Canvas.Top="133" Width="6"/>
+            <Image x:Name="shan" Height="181" Canvas.Left="-6" Source="/BasicInteractions-WPF;component/2首页_Images\shan.png" Canvas.Top="-34" Width="259"/>
+            <Image x:Name="昆_山" Height="56" Canvas.Left="120" Source="/BasicInteractions-WPF;component/2首页_Images\昆 山.png" Canvas.Top="105" Width="13"/>
+            <Image x:Name="小人1" Height="344" Canvas.Left="-76" Source="/BasicInteractions-WPF;component/2首页_Images\小人1.png" Canvas.Top="399" Width="538" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="图层_79" Height="655" Canvas.Left="0" Opacity="0.678" Source="/BasicInteractions-WPF;component/2首页_Images\图层 79.png" Canvas.Top="0" Width="1024"/>
+            <Image Opacity="0" x:Name="作品区分游戏" Height="238" Canvas.Left="724" Source="/BasicInteractions-WPF;component/2首页_Images\作品区分游戏.png" Canvas.Top="266" Width="36">
+                <Image.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsHoveredOver, ElementName=ZuoButton}" Value="True">
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.EnterActions>
+                                <DataTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="5"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.ExitActions>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="联系发展" Opacity="0" Height="141" Canvas.Left="612" Source="/BasicInteractions-WPF;component/2首页_Images\联系发展.png" Canvas.Top="270" Width="39">
+                <Image.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsHoveredOver, ElementName=LianButton}" Value="True">
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.EnterActions>
+                                <DataTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="5"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.ExitActions>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="名剧赏析" Opacity="0" Height="145" Canvas.Left="500" Source="/BasicInteractions-WPF;component/2首页_Images\名剧赏析.png" Canvas.Top="269" Width="37">
+                <Image.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsHoveredOver, ElementName=JuButton}" Value="True">
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.EnterActions>
+                                <DataTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="5"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.ExitActions>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="历史行程" Opacity="0"  Height="136" Canvas.Left="380" Source="/BasicInteractions-WPF;component/2首页_Images\历史行程.png" Canvas.Top="270" Width="41" RenderTransformOrigin="0.5,0.5">
+                <Image.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsHoveredOver, ElementName=ShiButton}" Value="True">
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="5"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.EnterActions>
+                                <DataTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="5"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </DataTrigger.ExitActions>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <!--<Image x:Name="音符_副本_2" Height="38" Canvas.Left="494" Source="/BasicInteractions-WPF;component/2首页_Images\音符 副本 2.png" Canvas.Top="606" Width="23"/>
+            <Image x:Name="静音_副本_2" Height="31" Canvas.Left="493" Source="/BasicInteractions-WPF;component/2首页_Images\静音 副本 2.png" Canvas.Top="612" Width="24"/>-->
+            <local:HoverDwellButton x:Name="ShiButton" IsHitTestVisible="{Binding IsHandRaised, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:Introduction}}}"
+                            Background="Transparent" SoundOnEnter="slot_roll_on.wav" Canvas.Left="371"  Canvas.Top="199" Height="61" Width="61"
+                            SoundOnClick="snd_buttonselect.wav" Style="{StaticResource EnlargingHoverDwellButton}" HoverClick="ShiButtonHoverClick">
+                <Grid>
+                    <Image x:Name="史圈" Height="61" Source="/BasicInteractions-WPF;component/2首页_Images\史圈.png" Width="61"/>
+                </Grid>
+            </local:HoverDwellButton>
+            <local:HoverDwellButton x:Name="JuButton" IsHitTestVisible="{Binding IsHandRaised, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:Introduction}}}"
+                            Background="Transparent" SoundOnEnter="slot_roll_on.wav" Canvas.Left="489"  Canvas.Top="198" Height="61" Width="61"
+                            SoundOnClick="snd_buttonselect.wav" Style="{StaticResource EnlargingHoverDwellButton}" HoverClick="JuButtonHoverClick">
+                <Grid>
+                    <Image x:Name="剧圈" Height="61" Source="/BasicInteractions-WPF;component/2首页_Images\剧圈.png" Width="61"/>
+                </Grid>
+            </local:HoverDwellButton>
+            <local:HoverDwellButton x:Name="LianButton" IsHitTestVisible="{Binding IsHandRaised, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:Introduction}}}"
+                            Background="Transparent" SoundOnEnter="slot_roll_on.wav" Canvas.Left="603"  Canvas.Top="198" Height="61" Width="61"
+                            SoundOnClick="snd_buttonselect.wav" Style="{StaticResource EnlargingHoverDwellButton}" HoverClick="LianButtonHoverClick">
+                <Grid>
+                    <Image x:Name="联圈" Height="61" Source="/BasicInteractions-WPF;component/2首页_Images\联圈.png" Width="61"/>
+                </Grid>
+            </local:HoverDwellButton>
+            <local:HoverDwellButton x:Name="ZuoButton" IsHitTestVisible="{Binding IsHandRaised, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:Introduction}}}"
+                            Background="Transparent" SoundOnEnter="slot_roll_on.wav" Canvas.Left="713"  Canvas.Top="198" Height="61" Width="61"
+                            SoundOnClick="snd_buttonselect.wav" Style="{StaticResource EnlargingHoverDwellButton}" HoverClick="ZuoButtonHoverClick">
+                <Grid>
+                    <Image x:Name="作圈" Height="61" Source="/BasicInteractions-WPF;component/2首页_Images\作圈.png" Width="61"/>
+                </Grid>
+            </local:HoverDwellButton>
+        </Canvas>
+    </Grid>
+</UserControl>

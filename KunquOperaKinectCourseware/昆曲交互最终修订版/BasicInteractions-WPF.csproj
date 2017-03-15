@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E073D57-EA4E-496D-A22F-DA2E1961262C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Samples.Kinect.BasicInteractions</RootNamespace>
+    <AssemblyName>BasicInteractions-WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Kinect">
+      <HintPath>$(KINECTSDK10_DIR)\Assemblies\Microsoft.Kinect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Speech, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Views\CategorySelectionControl2.xaml.cs">
+      <DependentUpon>CategorySelectionControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HandHoverTimer.cs" />
+    <Compile Include="Controllers\HandPosition.cs" />
+    <Compile Include="Controllers\KinectController.cs" />
+    <Compile Include="Controllers\HandInputEventArgs.cs" />
+    <Compile Include="Controls\HoverDwellButton.cs" />
+    <Compile Include="Controls\VideoPlayer.cs" />
+    <Compile Include="Converters\EqualToConverter.cs" />
+    <Compile Include="Converters\MillisecondsToDurationConverter.cs" />
+    <Compile Include="Converters\MillisecondsToKeyTimeConverter.cs" />
+    <Compile Include="Converters\VisibilityConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="Views\AttractControl.xaml.cs">
+      <DependentUpon>AttractControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CategorySelectionControl3.xaml.cs">
+      <DependentUpon>CategorySelectionControl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CategorySelectionControl4.xaml.cs">
+      <DependentUpon>CategorySelectionControl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Introduction.xaml.cs">
+      <DependentUpon>Introduction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StorySelectionControl.xaml.cs">
+      <DependentUpon>StorySelectionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CategorySelectionControl.xaml.cs">
+      <DependentUpon>CategorySelectionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HandVisualizer.xaml.cs">
+      <DependentUpon>HandVisualizer.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\CategorySelectionControl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ControlStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resources\Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AttractControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CategorySelectionControl3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CategorySelectionControl4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Introduction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StorySelectionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CategorySelectionControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\HandVisualizer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_ScrollViewer\FuXing1.jpg" />
+    <Resource Include="Images_ScrollViewer\FuXing2.jpg" />
+    <Resource Include="Images_ScrollViewer\ShuaiBai1.jpg" />
+    <Resource Include="Images_ScrollViewer\ShuaiBai2.jpg" />
+    <Resource Include="Images_ScrollViewer\XingSheng1.jpg" />
+    <Resource Include="Images_ScrollViewer\XingSheng2.jpg" />
+    <Resource Include="Images_ScrollViewer\XingSheng3.jpg" />
+    <Resource Include="Images_ScrollViewer\XingSheng4.jpg" />
+    <Resource Include="Images_ScrollViewer\FaZhan1.jpg" />
+    <Resource Include="Images_ScrollViewer\FaZhan2.jpg" />
+    <Resource Include="Images_ScrollViewer\KunShanQiang1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images_ScrollViewer\KunShanQiang2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images_ScrollViewer\GuJian1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images_ScrollViewer\GuJian2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images_ScrollViewer\QianDeng1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images_ScrollViewer\QianDeng2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images_ScrollViewer\QianDeng3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icon.ico" />
+    <Resource Include="Resources\Images\arrow_icon.png" />
+    <Resource Include="Resources\Images\pause.png" />
+    <Resource Include="Resources\Images\play.png" />
+    <Resource Include="1欢迎_Images1\图层 1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\welcome框.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\图层 0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\小人女.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\点我~ 副本 2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\点我~ 副本 3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\点我~ 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\点我~.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\绝代昆曲图.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\背景.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\静音 副本 3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="1欢迎_Images\音符 副本 3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="2首页_Images\Chinese Qukun          .png" />
+    <Resource Include="2首页_Images\C底线 副本 2.png" />
+    <Resource Include="2首页_Images\C底线 副本 3.png" />
+    <Resource Include="2首页_Images\C底线 副本 4.png" />
+    <Resource Include="2首页_Images\C底线 副本.png" />
+    <Resource Include="2首页_Images\C底线.png" />
+    <Resource Include="2首页_Images\leaves.png" />
+    <Resource Include="2首页_Images\shan.png" />
+    <Resource Include="2首页_Images\作.png" />
+    <Resource Include="2首页_Images\作圈.png" />
+    <Resource Include="2首页_Images\六百年.png" />
+    <Resource Include="2首页_Images\剧.png" />
+    <Resource Include="2首页_Images\剧圈.png" />
+    <Resource Include="2首页_Images\印章.png" />
+    <Resource Include="2首页_Images\印章2.png" />
+    <Resource Include="2首页_Images\历史行程.png" />
+    <Resource Include="2首页_Images\史.png" />
+    <Resource Include="2首页_Images\史圈.png" />
+    <Resource Include="2首页_Images\名剧赏析.png" />
+    <Resource Include="2首页_Images\图层 11 副本 %28Layer Mask%29.png" />
+    <Resource Include="2首页_Images\图层 11 副本.png" />
+    <Resource Include="2首页_Images\图层 19 副本.png" />
+    <Resource Include="2首页_Images\图层 25.png" />
+    <Resource Include="2首页_Images\图层 66.png" />
+    <Resource Include="2首页_Images\图层 67.png" />
+    <Resource Include="2首页_Images\图层 77.png" />
+    <Resource Include="2首页_Images\图层 78.png" />
+    <Resource Include="2首页_Images\图层 79.png" />
+    <Resource Include="2首页_Images\图层 85 副本.png" />
+    <Resource Include="2首页_Images\图层 85.png" />
+    <Resource Include="2首页_Images\图层 87 %28Layer Mask%29.png" />
+    <Resource Include="2首页_Images\图层 87.png" />
+    <Resource Include="2首页_Images\图层 91 副本.png" />
+    <Resource Include="2首页_Images\图层 91.png" />
+    <Resource Include="2首页_Images\大师名作.png" />
+    <Resource Include="2首页_Images\小人1.png" />
+    <Resource Include="2首页_Images\昆 山.png" />
+    <Resource Include="2首页_Images\昆.png" />
+    <Resource Include="2首页_Images\昆曲.png" />
+    <Resource Include="2首页_Images\明清昆曲发展兴盛.png" />
+    <Resource Include="2首页_Images\曲.png" />
+    <Resource Include="2首页_Images\概括.png" />
+    <Resource Include="2首页_Images\清代后期昆曲的衰落与分化.png" />
+    <Resource Include="2首页_Images\由没落到重振的近现代昆曲.png" />
+    <Resource Include="2首页_Images\联.png" />
+    <Resource Include="2首页_Images\联圈.png" />
+    <Resource Include="2首页_Images\联系发展.png" />
+    <Resource Include="2首页_Images\背景 副本.png" />
+    <Resource Include="2首页_Images\起源与形成.png" />
+    <Resource Include="2首页_Images\难寻吴宫旧舞茵，问开元遗事，白头人尽。云亭词客，搁笔几度酸辛。声传皓齿曲未终，泪滴红盘蜡已寸。袍笏样，墨粉痕，一番妆点一番新。.png" />
+    <Resource Include="2首页_Images\静音 副本 2.png" />
+    <Resource Include="2首页_Images\音符 副本 2.png" />
+    <Resource Include="2首页_Images\鼠标跟随.png" />
+    <Resource Include="3-0历史_Images\BACK.png" />
+    <Resource Include="3-0历史_Images\DECAY.png" />
+    <Resource Include="3-0历史_Images\DEVELOP.png" />
+    <Resource Include="3-0历史_Images\Kunqu      Opera.png" />
+    <Resource Include="3-0历史_Images\leaves.png" />
+    <Resource Include="3-0历史_Images\ORIGIN.png" />
+    <Resource Include="3-0历史_Images\REVIVE.png" />
+    <Resource Include="3-0历史_Images\THRIVE.png" />
+    <Resource Include="3-0历史_Images\作圈 副本.png" />
+    <Resource Include="3-0历史_Images\兴.png" />
+    <Resource Include="3-0历史_Images\剧圈 副本.png" />
+    <Resource Include="3-0历史_Images\历史行程.png" />
+    <Resource Include="3-0历史_Images\发.png" />
+    <Resource Include="3-0历史_Images\史biao.png" />
+    <Resource Include="3-0历史_Images\图层 1 %28Layer Mask%29.png" />
+    <Resource Include="3-0历史_Images\图层 1.png" />
+    <Resource Include="3-0历史_Images\图层 2 %28Layer Mask%29.png" />
+    <Resource Include="3-0历史_Images\图层 2.png" />
+    <Resource Include="3-0历史_Images\圆角矩形 1 副本 2.png" />
+    <Resource Include="3-0历史_Images\圆角矩形 1 副本 3.png" />
+    <Resource Include="3-0历史_Images\圆角矩形 1 副本 4.png" />
+    <Resource Include="3-0历史_Images\圆角矩形 1 副本.png" />
+    <Resource Include="3-0历史_Images\圆角矩形 1.png" />
+    <Resource Include="3-0历史_Images\复.png" />
+    <Resource Include="3-0历史_Images\小人.png" />
+    <Resource Include="3-0历史_Images\小人眨眼.png" />
+    <Resource Include="3-0历史_Images\昆     曲.png" />
+    <Resource Include="3-0历史_Images\源.png" />
+    <Resource Include="3-0历史_Images\箭头.png" />
+    <Resource Include="3-0历史_Images\联圈 副本.png" />
+    <Resource Include="3-0历史_Images\背景 副本.png" />
+    <Resource Include="3-0历史_Images\背景.png" />
+    <Resource Include="3-0历史_Images\衰.png" />
+    <Resource Include="3-0历史_Images\轴.png" />
+    <Resource Include="3-0历史_Images\静音 副本 3.png" />
+    <Resource Include="3-0历史_Images\音符 副本 3.png" />
+    <Resource Include="3-1起源_Images\BACK 副本.png" />
+    <Resource Include="3-1起源_Images\Kunqu      Opera.png" />
+    <Resource Include="3-1起源_Images\leaves.png" />
+    <Resource Include="3-1起源_Images\origin.png" />
+    <Resource Include="3-1起源_Images\作圈 副本 2.png" />
+    <Resource Include="3-1起源_Images\前身：昆山腔.png" />
+    <Resource Include="3-1起源_Images\剧圈 副本 2.png" />
+    <Resource Include="3-1起源_Images\发.png" />
+    <Resource Include="3-1起源_Images\史圈 副本 2.png" />
+    <Resource Include="3-1起源_Images\图层 1 %28Layer Mask%29.png" />
+    <Resource Include="3-1起源_Images\图层 1.png" />
+    <Resource Include="3-1起源_Images\图层 2 %28Layer Mask%29.png" />
+    <Resource Include="3-1起源_Images\图层 2.png" />
+    <Resource Include="3-1起源_Images\地点：昆山市千灯镇.png" />
+    <Resource Include="3-1起源_Images\小人 副本.png" />
+    <Resource Include="3-1起源_Images\小人眨眼.png" />
+    <Resource Include="3-1起源_Images\昆     曲.png" />
+    <Resource Include="3-1起源_Images\源.png" />
+    <Resource Include="3-1起源_Images\箭头右.png" />
+    <Resource Include="3-1起源_Images\联圈 副本 2.png" />
+    <Resource Include="3-1起源_Images\背景 副本.png" />
+    <Resource Include="3-1起源_Images\背景.png" />
+    <Resource Include="3-1起源_Images\起.png" />
+    <Resource Include="3-1起源_Images\静音.png" />
+    <Resource Include="3-1起源_Images\音符.png" />
+    <Resource Include="3-1起源_Images\鼻祖：顾坚.png" />
+    <Resource Include="3-2发展_Images\DEVELOP.png" />
+    <Resource Include="3-2发展_Images\兴.png" />
+    <Resource Include="3-2发展_Images\发.png" />
+    <Resource Include="3-2发展_Images\展.png" />
+    <Resource Include="3-2发展_Images\源.png" />
+    <Resource Include="3-2发展_Images\箭头右.png" />
+    <Resource Include="3-2发展_Images\箭头左.png" />
+    <Resource Include="3-3兴盛_Images\THRIVE.png" />
+    <Resource Include="3-3兴盛_Images\兴.png" />
+    <Resource Include="3-3兴盛_Images\发.png" />
+    <Resource Include="3-3兴盛_Images\盛.png" />
+    <Resource Include="3-3兴盛_Images\箭头右.png" />
+    <Resource Include="3-3兴盛_Images\箭头左.png" />
+    <Resource Include="3-3兴盛_Images\衰.png" />
+    <Resource Include="3-4衰落_Images\DECEY.png" />
+    <Resource Include="3-4衰落_Images\兴.png" />
+    <Resource Include="3-4衰落_Images\复.png" />
+    <Resource Include="3-4衰落_Images\箭头右.png" />
+    <Resource Include="3-4衰落_Images\箭头左.png" />
+    <Resource Include="3-4衰落_Images\落.png" />
+    <Resource Include="3-4衰落_Images\衰.png" />
+    <Resource Include="3-5复兴_Images\REVIVE.png" />
+    <Resource Include="3-5复兴_Images\兴.png" />
+    <Resource Include="3-5复兴_Images\复.png" />
+    <Resource Include="3-5复兴_Images\箭头左.png" />
+    <Resource Include="3-5复兴_Images\衰.png" />
+    <Resource Include="4-0名剧_Images\BACK.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\Kunqu      Opera 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\leaves 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\《桃花扇》.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\《牡丹亭》.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\《长生殿》.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\作圈 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\剧圈 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\史圈 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\名剧赏析.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\图层 1 副本 %28Layer Mask%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\图层 1 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\图层 2 副本 %28Layer Mask%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\图层 2 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\墨1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\墨2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\昆     曲 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\桃花扇.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\桃花扇按钮.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\牡丹亭.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\牡丹亭按钮.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\男小人头.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\男小人身子.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\联圈 副本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\背景 副本 2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\背景.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\长生殿.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\长生殿按钮.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\静音 副本 2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\音符 副本 2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="4-0名剧_Images\wildlife.wmv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="2首页_Images\kunshan.png" />
+    <Resource Include="2首页_Images\苏州昆曲博物馆.png" />
+    <Resource Include="4-1播放界面_Images\01270300.png" />
+    <Resource Include="4-1播放界面_Images\BACK.png" />
+    <Resource Include="4-1播放界面_Images\Kunqu      Opera 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\leaves 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\《桃花扇》 .png" />
+    <Resource Include="4-1播放界面_Images\《桃花扇》名列中国古典戏曲五大名著之一，作 者孔尚任为孔子六十四代孙，借离合之情，写兴 亡之感，以明末文人侯方域与秦淮名妓李香.png" />
+    <Resource Include="4-1播放界面_Images\《牡丹亭》.png" />
+    <Resource Include="4-1播放界面_Images\《牡丹亭》是明朝剧作家汤显祖的代表作之一， 共55出，描写杜丽娘和柳梦梅的爱情故事。与其 《紫钗记》《南柯记》《邯郸记》并称为.png" />
+    <Resource Include="4-1播放界面_Images\《长生殿》 .png" />
+    <Resource Include="4-1播放界面_Images\《长生殿》是清初剧作家洪升%281645-1704年）所 作的剧本，取材自唐代诗人白居易的长诗《长恨 歌》和元代剧作家白朴的剧作《.png" />
+    <Resource Include="4-1播放界面_Images\上一个.png" />
+    <Resource Include="4-1播放界面_Images\下一个.png" />
+    <Resource Include="4-1播放界面_Images\介绍背景框.png" />
+    <Resource Include="4-1播放界面_Images\作圈 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\剧 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\剧圈 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\史圈 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\名剧赏析.png" />
+    <Resource Include="4-1播放界面_Images\图层 1 副本 2 %28Layer Mask%29.png" />
+    <Resource Include="4-1播放界面_Images\图层 1 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\图层 2 副本 2 %28Layer Mask%29.png" />
+    <Resource Include="4-1播放界面_Images\图层 2 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\墨1 副本.png" />
+    <Resource Include="4-1播放界面_Images\墨2 副本.png" />
+    <Resource Include="4-1播放界面_Images\快进5秒.png" />
+    <Resource Include="4-1播放界面_Images\快退5秒.png" />
+    <Resource Include="4-1播放界面_Images\播放.png" />
+    <Resource Include="4-1播放界面_Images\时间底.png" />
+    <Resource Include="4-1播放界面_Images\昆     曲 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\暂停.png" />
+    <Resource Include="4-1播放界面_Images\男小人 副本.png" />
+    <Resource Include="4-1播放界面_Images\男小人头.png" />
+    <Resource Include="4-1播放界面_Images\男小人身子.png" />
+    <Resource Include="4-1播放界面_Images\联圈 副本 2.png" />
+    <Resource Include="4-1播放界面_Images\背景 副本 3.png" />
+    <Resource Include="4-1播放界面_Images\背景.png" />
+    <Resource Include="4-1播放界面_Images\进度条红.png" />
+    <Resource Include="4-1播放界面_Images\进度条黑.png" />
+    <Resource Include="4-1播放界面_Images\进度钮.png" />
+    <Resource Include="4-1播放界面_Images\静音 副本 5.png" />
+    <Resource Include="4-1播放界面_Images\静音.png" />
+    <Resource Include="4-1播放界面_Images\音符 副本 5.png" />
+    <Resource Include="4-1播放界面_Images\音量.png" />
+    <Resource Include="4-1播放界面_Images\音量条红.png" />
+    <Resource Include="4-1播放界面_Images\音量条黑.png" />
+    <Resource Include="4-1播放界面_Images\音量钮.png" />
+    <Resource Include="5-0发展_Images\BACK 副本.png" />
+    <Resource Include="5-0发展_Images\I WANT TO PLAY A GAME.png" />
+    <Resource Include="5-0发展_Images\Kunqu      Opera 副本 2.png" />
+    <Resource Include="5-0发展_Images\leaves 副本 2.png" />
+    <Resource Include="5-0发展_Images\京剧.png" />
+    <Resource Include="5-0发展_Images\京剧底.png" />
+    <Resource Include="5-0发展_Images\京剧文字底.png" />
+    <Resource Include="5-0发展_Images\作圈 副本 7.png" />
+    <Resource Include="5-0发展_Images\剧圈 副本 7.png" />
+    <Resource Include="5-0发展_Images\史圈 副本 7.png" />
+    <Resource Include="5-0发展_Images\图层 1 副本 2 %28Layer Mask%29.png" />
+    <Resource Include="5-0发展_Images\图层 1 副本 2.png" />
+    <Resource Include="5-0发展_Images\图层 2 副本 2 %28Layer Mask%29.png" />
+    <Resource Include="5-0发展_Images\图层 2 副本 2.png" />
+    <Resource Include="5-0发展_Images\小人 副本.png" />
+    <Resource Include="5-0发展_Images\小人眨眼.png" />
+    <Resource Include="5-0发展_Images\昆     曲 副本 2.png" />
+    <Resource Include="5-0发展_Images\昆曲与京剧.png" />
+    <Resource Include="5-0发展_Images\昆曲与越剧.png" />
+    <Resource Include="5-0发展_Images\联 副本 2.png" />
+    <Resource Include="5-0发展_Images\联圈 副本 2.png" />
+    <Resource Include="5-0发展_Images\联系发展.png" />
+    <Resource Include="5-0发展_Images\背景 副本 3.png" />
+    <Resource Include="5-0发展_Images\背景.png" />
+    <Resource Include="5-0发展_Images\越剧.png" />
+    <Resource Include="5-0发展_Images\越剧底.png" />
+    <Resource Include="5-0发展_Images\越剧文字底.png" />
+    <Resource Include="5-0发展_Images\静音 副本.png" />
+    <Resource Include="5-0发展_Images\音符 副本.png" />
+    <Resource Include="2首页_Images\作品区分游戏.png" />
+    <Resource Include="5-1小游戏_Images\BACK 副本 2.png" />
+    <Resource Include="5-1小游戏_Images\G A M E.png" />
+    <Resource Include="5-1小游戏_Images\Kunqu      Opera 副本 3.png" />
+    <Resource Include="5-1小游戏_Images\leaves 副本 3.png" />
+    <Resource Include="5-1小游戏_Images\V面具.png" />
+    <Resource Include="5-1小游戏_Images\上一曲.png" />
+    <Resource Include="5-1小游戏_Images\上一曲标.png" />
+    <Resource Include="5-1小游戏_Images\下一曲.png" />
+    <Resource Include="5-1小游戏_Images\下一曲标.png" />
+    <Resource Include="5-1小游戏_Images\京剧.png" />
+    <Resource Include="5-1小游戏_Images\京剧勾.png" />
+    <Resource Include="5-1小游戏_Images\京剧圈.png" />
+    <Resource Include="5-1小游戏_Images\作圈 副本 5.png" />
+    <Resource Include="5-1小游戏_Images\剧圈 副本 5.png" />
+    <Resource Include="5-1小游戏_Images\史圈 副本 5.png" />
+    <Resource Include="5-1小游戏_Images\回答正确背景.png" />
+    <Resource Include="5-1小游戏_Images\回答错误背景.png" />
+    <Resource Include="5-1小游戏_Images\图层 1 副本 3 %28Layer Mask%29.png" />
+    <Resource Include="5-1小游戏_Images\图层 1 副本 3.png" />
+    <Resource Include="5-1小游戏_Images\图层 2 副本 3 %28Layer Mask%29.png" />
+    <Resource Include="5-1小游戏_Images\图层 2 副本 3.png" />
+    <Resource Include="5-1小游戏_Images\墨1 副本 2.png" />
+    <Resource Include="5-1小游戏_Images\墨1 副本.png" />
+    <Resource Include="5-1小游戏_Images\小人 眨眼.png" />
+    <Resource Include="5-1小游戏_Images\小人.png" />
+    <Resource Include="5-1小游戏_Images\恭喜你！答对了！.png" />
+    <Resource Include="5-1小游戏_Images\提交.png" />
+    <Resource Include="5-1小游戏_Images\提交标.png" />
+    <Resource Include="5-1小游戏_Images\昆     曲 副本 3.png" />
+    <Resource Include="5-1小游戏_Images\昆曲.png" />
+    <Resource Include="5-1小游戏_Images\昆曲勾.png" />
+    <Resource Include="5-1小游戏_Images\昆曲圈.png" />
+    <Resource Include="5-1小游戏_Images\根据播放片段判断剧种.png" />
+    <Resource Include="5-1小游戏_Images\电锯惊魂头.png" />
+    <Resource Include="5-1小游戏_Images\真遗憾，答错了。.png" />
+    <Resource Include="5-1小游戏_Images\联圈 副本 5.png" />
+    <Resource Include="5-1小游戏_Images\背景 副本 4.png" />
+    <Resource Include="5-1小游戏_Images\背景.png" />
+    <Resource Include="5-1小游戏_Images\越剧.png" />
+    <Resource Include="5-1小游戏_Images\越剧勾.png" />
+    <Resource Include="5-1小游戏_Images\越剧圈.png" />
+    <Resource Include="5-1小游戏_Images\静音 副本 2.png" />
+    <Resource Include="5-1小游戏_Images\音符 副本 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Sounds\snd_buttonselect.wav" />
+    <EmbeddedResource Include="Resources\Sounds\slot_roll_on.wav" />
+    <Resource Include="Resources\Images\hand_l.png" />
+    <Resource Include="Resources\Images\hand_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3-0历史_Images\喇叭.png" />
+    <Resource Include="3-0历史_Images\喇叭取消.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

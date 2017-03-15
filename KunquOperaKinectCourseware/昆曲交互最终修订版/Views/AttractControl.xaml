@@ -1,0 +1,190 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="Microsoft.Samples.Kinect.BasicInteractions.AttractControl"
+	x:Name="Window" Background="White">
+    <UserControl.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="百戏之祖">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="之">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="昆曲六百年">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="绝代昆曲图">
+                <EasingDoubleKeyFrame KeyTime="0:0:4.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.669" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="MADE_BY">
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.696" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="张永林_朱仕杰">
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.696" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>-->
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="小人女">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="小人女">
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="小人女">
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="小人女眨眼">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:8.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:8.6" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:12.3" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:12.4" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:15.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:15.3" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:15.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:15.5" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:18.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:18.5" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:22.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:22.6" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:33" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:33.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:33.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:33.3" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="WELCOME">
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="welcome框">
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WELCOME">
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="welcome框">
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="点我_">
+                <DiscreteObjectKeyFrame KeyTime="0:0:9.7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:10.4" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:13" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:14" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="点我__副本_2">
+                <DiscreteObjectKeyFrame KeyTime="0:0:9.7" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:10.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:11.2" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:14" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:15" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="点我__副本">
+                <DiscreteObjectKeyFrame KeyTime="0:0:9.7" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:11.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:12.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:15" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:16" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="点我__副本_3">
+                <DiscreteObjectKeyFrame KeyTime="0:0:9.7" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:12.1" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:13" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:16" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+    <Grid x:Name="LayoutRoot">
+        <Canvas x:Name="_1欢迎" ClipToBounds="True" HorizontalAlignment="Left" Height="655" UseLayoutRounding="False" VerticalAlignment="Top" Width="1024">
+            <Image x:Name="图层_0" Height="655" Canvas.Left="0" Source="/BasicInteractions-WPF;component/1欢迎_Images\图层 0.png" Canvas.Top="0" Width="1024" d:IsLocked="True"/>
+            <Image x:Name="背景" Height="757" Canvas.Left="-37" Source="/BasicInteractions-WPF;component/1欢迎_Images\背景.png" Canvas.Top="0" Width="1070" d:IsLocked="True"/>
+            <TextBlock x:Name="百戏之祖" Foreground="#FFFF0000" FontSize="109.995" FontFamily="STXingkai" IsHyphenationEnabled="True" Canvas.Left="266" TextAlignment="Left" TextWrapping="Wrap" Text="百戏之祖" Canvas.Top="153.005" d:IsLocked="True"/>
+            <TextBlock x:Name="之" Foreground="#FF000000" FontSize="51.997" FontFamily="STXingkai" IsHyphenationEnabled="True" Canvas.Left="477" TextAlignment="Left" TextWrapping="Wrap" Text="之" Canvas.Top="285.003" d:IsLocked="True"/>
+            <TextBlock x:Name="昆曲六百年" Foreground="#FFFF0000" FontSize="67.997" FontFamily="STXingkai" IsHyphenationEnabled="True" Canvas.Left="320" TextAlignment="Left" TextWrapping="Wrap" Text="昆曲六百年" Canvas.Top="346.003" d:IsLocked="True"/>
+            <Image x:Name="绝代昆曲图" Height="757" Canvas.Left="-46" Source="/BasicInteractions-WPF;component/1欢迎_Images\绝代昆曲图.png" Width="1070" Opacity="0" d:IsLocked="True"/>
+            <Image x:Name="小人女" Height="419" Source="/BasicInteractions-WPF;component/1欢迎_Images\小人女.png" Canvas.Top="176" Width="240" RenderTransformOrigin="0.5,0.5" Canvas.Left="391" d:IsLocked="True">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="小人女眨眼" Height="419" Canvas.Left="391" Source="/BasicInteractions-WPF;component/1欢迎_Images1\图层 1.png" Canvas.Top="176" Width="240" d:IsLocked="True"/>
+            <TextBlock x:Name="WELCOME" Foreground="#FF000000" FontWeight="Bold" FontSize="57.997" FontFamily="Square721BT-RomanExtended" IsHyphenationEnabled="True" Canvas.Left="318" TextAlignment="Left" TextWrapping="Wrap" Text="WELCOME" Canvas.Top="57.003" RenderTransformOrigin="0.5,0.5" Opacity="0" d:IsLocked="True">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+            </TextBlock>
+            <Image x:Name="welcome框" Height="131" Canvas.Left="294" Source="/BasicInteractions-WPF;component/1欢迎_Images\welcome框.png" Canvas.Top="41" Width="441" RenderTransformOrigin="0.5,0.5" Opacity="0" d:IsLocked="True">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <!--<TextBlock x:Name="MADE_BY" FontWeight="Bold" FontSize="17.999" FontFamily="Square721BT-RomanExtended" IsHyphenationEnabled="True" Canvas.Left="814" TextAlignment="Left" TextWrapping="Wrap" Text="MADE BY" Canvas.Top="607.001" RenderTransformOrigin="0.5,0.5" Opacity="0" d:IsLocked="True">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="张永林_朱仕杰" FontWeight="Bold" FontSize="17.999" FontFamily="Adobe Heiti Std R" IsHyphenationEnabled="True" Canvas.Left="945" TextAlignment="Left" TextWrapping="Wrap" Text="张永林&#xa;朱仕杰" Canvas.Top="591.001" TextDecorations="Underline" RenderTransformOrigin="0.5,0.5" Opacity="0" d:IsLocked="True">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+            </TextBlock>-->
+            <Image x:Name="点我_" Height="96" Canvas.Left="626" Source="/BasicInteractions-WPF;component/1欢迎_Images\点我~.png" Canvas.Top="179.008" Width="106" Visibility="Hidden"/>
+            <Image x:Name="点我__副本_2" Height="93" Canvas.Left="629" Source="/BasicInteractions-WPF;component/1欢迎_Images\点我~ 副本 2.png" Canvas.Top="303.003" Width="103" Visibility="Hidden"/>
+            <Image x:Name="点我__副本" Height="94" Canvas.Left="280" Source="/BasicInteractions-WPF;component/1欢迎_Images\点我~ 副本.png" Canvas.Top="179.008" Width="107" Visibility="Hidden"/>
+            <Image x:Name="点我__副本_3" Height="93" Canvas.Left="294" Source="/BasicInteractions-WPF;component/1欢迎_Images\点我~ 副本 3.png" Canvas.Top="303.003" Width="103" Visibility="Hidden"/>
+            <!--<Image x:Name="音符_副本_3" Height="38" Canvas.Left="25" Source="/BasicInteractions-WPF;component/1欢迎_Images\音符 副本 3.png" Canvas.Top="602" Width="23" d:IsHidden="True"/>
+            <Image x:Name="静音_副本_3" Height="31" Canvas.Left="24" Source="/BasicInteractions-WPF;component/1欢迎_Images\静音 副本 3.png" Canvas.Top="608" Width="24" d:IsHidden="True"/>-->
+        </Canvas>
+    </Grid>
+</UserControl>
